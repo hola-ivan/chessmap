@@ -14,27 +14,29 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#clubs">Clubs</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <section id="home">
-        <h1>Welcome to ChessMap!</h1>
-        <p>Discover nearby chess events and clubs.</p>
+        <h1>Welcome to Chess Events and Clubs</h1>
+        <p>Discover and explore chess events and clubs near you. Join the community and improve your game!</p>
+        <div class="cta-buttons">
+            <a href="#events" class="btn">Explore Events</a>
+            <a href="#clubs" class="btn">Explore Clubs</a>
+            <a href="#submit" class="btn">Submit Your Event or Club</a>
+        </div>
     </section>
 
-    <section id="map"></section>
+    <section id="events">
+        <h2>Events</h2>
+        <div id="events-map" class="map"></div>
+    </section>
 
-    <section id="list">
-        <h2>Upcoming Events and Clubs</h2>
-        <ul>
-            <li>Event 1: Chess Tournament - July 10, 2024</li>
-            <li>Event 2: Chess Club Meetup - July 15, 2024</li>
-            <li>Club 1: Downtown Chess Club</li>
-            <li>Club 2: Uptown Chess Enthusiasts</li>
-        </ul>
+    <section id="clubs">
+        <h2>Clubs</h2>
+        <div id="clubs-map" class="map"></div>
     </section>
 </main>
 
