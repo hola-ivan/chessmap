@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess Events and Clubs</title>
+    <title>Chess Clubs</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
 <header>
@@ -18,14 +19,9 @@
 </header>
 
 <main>
-    <section id="home">
-        <h1>Welcome to Chess Events and Clubs</h1>
-        <p>Discover and explore chess events and clubs near you. Join the community and improve your game!</p>
-        <div class="cta-buttons">
-            <a href="events.html" class="btn">Explore Events</a>
-            <a href="clubs.html" class="btn">Explore Clubs</a>
-            <a href="#submit" class="btn">Submit Your Event or Club</a>
-        </div>
+    <section id="clubs">
+        <h2>Clubs</h2>
+        <div id="clubs-map" class="map"></div>
     </section>
 </main>
 
@@ -33,5 +29,8 @@
     <p>Contact us at <a href="mailto:info@chessclubs.com">info@chessclubs.com</a></p>
     <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
 </footer>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="clubs.js"></script>
 </body>
 </html>
