@@ -1,8 +1,8 @@
 // events.js
 
-function initMap() {
-    // Events map
-    const eventsMap = L.map('events-map').setView([40.73061, -73.935242], 12); // Example coordinates (New York)
+function initEventsMap() {
+    const eventsMap = L.map('events-map').setView([40.73061, -73.935242], 2); // World view
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(eventsMap);
