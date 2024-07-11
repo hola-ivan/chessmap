@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eventstest.html">Events</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="events">
+        <h2>Events</h2>
+        <div id="filter-buttons">
+            <button id="filter-january">January</button>
+            <button id="filter-february">February</button>
+            <button id="filter-march">March</button>
+            <button id="filter-april">April</button>
+            <button id="filter-may">May</button>
+            <button id="filter-june">June</button>
+            <button id="filter-july">July</button>
+            <button id="filter-august">August</button>
+            <button id="filter-september">September</button>
+            <button id="filter-october">October</button>
+            <button id="filter-november">November</button>
+            <button id="filter-december">December</button>
+            <button id="filter-all">Show All</button>
+        </div>
+        <div id="events-map" class="map"></div>
+    </section>
+</main>
+
+<footer>
+    <p>Made with ❤ by chess lovers </p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="eventstest.js"></script>
+</body>
+</html>
