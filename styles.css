@@ -106,7 +106,7 @@ footer a:hover {
     display: inline-block;
     margin: 0.5em;
     padding: 0.75em 1.5em;
-    background-color: #1e90ff;
+    background-color: #63625e;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -114,5 +114,5 @@ footer a:hover {
 }
 
 .btn:hover {
-    background-color: #1c86ee;
+    background-color: #565451;
 }
