@@ -1,4 +1,4 @@
-// api/translate.js
+// api/translate.js is a serverless function that translates text using the Deepl API. It requires the text and targetLang query parameters. The function fetches the translation from the Deepl API and returns the translated text. If the request is successful, the function returns a 200 status code with the translation. If there is an error, the function returns a 500 status code with an error message.
 const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
