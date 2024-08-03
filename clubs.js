@@ -8,7 +8,7 @@ function initClubsMap() {
     }).addTo(clubsMap);
 
     // Example markers for clubs (20 dummy clubs around the world)
-    const clubLocations = [
+    /*const clubLocations = [
         { lat: 51.505, lng: -0.09, title: 'Club 1: London Chess Club' },
         { lat: 48.8566, lng: 2.3522, title: 'Club 2: Paris Chess Club' },
         { lat: 40.7128, lng: -74.0060, title: 'Club 3: New York Chess Club' },
@@ -29,7 +29,7 @@ function initClubsMap() {
         { lat: -26.2041, lng: 28.0473, title: 'Club 18: Johannesburg Chess Club' },
         { lat: -37.8136, lng: 144.9631, title: 'Club 19: Melbourne Chess Club' },
         { lat: 35.6895, lng: 139.6917, title: 'Club 20: Tokyo Chess Club' }
-    ];
+    ];*/
 
     clubLocations.forEach(location => {
         L.marker([location.lat, location.lng]).addTo(clubsMap)

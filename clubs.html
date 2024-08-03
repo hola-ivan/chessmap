@@ -6,12 +6,35 @@
     <title>Chess Clubs</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        .cta-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border: 2px dashed #007bff;
+            margin: 20px 0;
+        }
+        .cta-section h3 {
+            margin-bottom: 10px;
+        }
+        .cta-section button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-section button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 <header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="clubs.html">Clubs</a></li>
         </ul>
@@ -22,16 +45,30 @@
     <section id="clubs">
         <h2>Clubs</h2>
         <div id="clubs-map" class="map"></div>
+        <div class="cta-section">
+            <h3>Help Us Grow the Chess Community!</h3>
+            <p>Do you know of a chess club that's not on our map? Please share it with us!</p>
+            <iframe id="contribute-form" src="https://wt7mtpp7.nocodb.com/#/nc/form/054feb34-72ac-4b87-9477-3f26f61e68d8/survey" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
     </section>
 </main>
 
 <footer>
-    <p>Made with ❤ by chess lovers </p>
-    <!--    <p>Contact us at <a href="mailto:info@chessmap.com">info@chessmap.com</a></p>
-        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Discord</a>, <a href="#">Instagram</a></p>-->
+    <p>Made with ❤ by chess lovers + open source</p>
+    <p>Latest update to the maps: August 2024</p>
 </footer>
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script src="clubs.js"></script>
+<script>
+    // Smooth scroll for contribute button
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', function() {
+            document.querySelector('#contribute-form').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 </body>
 </html>
