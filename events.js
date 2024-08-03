@@ -23,6 +23,8 @@ async function fetchEventData() {
         }
 
         const data = await response.json();
+        console.log('Data received from serverless function:', data); // Add this line
+
         return data.list.map(event => {
             const { lat, lng } = event['Event Location (Lat)'] && event['Event Location (Lng)']
                 ? { lat: parseFloat(event['Event Location (Lat)']), lng: parseFloat(event['Event Location (Lng)']) }
